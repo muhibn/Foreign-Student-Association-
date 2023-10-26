@@ -1,0 +1,85 @@
+ <!DOCTYPE html> 
+<html> 
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> indocument </title>
+<style> 
+
+
+
+ form { 
+        border: 3px solid #f1f1f1; 
+        width: 600px;
+        background: lightblue;
+        text-align: center;
+         position: absolute;
+         right: 30%;
+    } 
+ input{ 
+        width: 80%; 
+        margin: 8px 0;
+        padding: 12px 20px; 
+        display: inline-block; 
+        border: 2px solid green; 
+        box-sizing: border-box; 
+    }
+	select{ 
+        width: 80%; 
+        margin: 8px 0;
+        padding: 12px 20px; 
+        display: inline-block; 
+        border: 2px solid green; 
+        box-sizing: border-box; 
+    }
+	
+	
+	
+ button:hover { 
+        opacity: 0.7; 
+    } 
+    button { 
+       background-color: blue; 
+       width: 30%;
+        color: orange; 
+        padding: 15px; 
+        margin: 10px 0px;
+        font-size:20px ; 
+        border: none; 
+        cursor: pointer; 
+         } 
+  .cancelbtn { 
+        width: auto; 
+        padding: 10px 18px;
+        margin: 10px 5px;
+    } 
+   
+</style> 
+</head>  
+<body>  
+    <form>
+        <div class="container"> 
+            <label>File Name: </label> 
+            <input type="text" placeholder="File Name" name="File Name" required>
+			
+			<label>choose file</label>
+            <input type="file" placeholder="upload"	accept = "file/*" /> <br>		
+         
+ 
+            <label>Section :  </label>   &nbsp   &nbsp 
+            <select>  
+                 <option value="Course">Course</option>  
+                 <option value="BCA">BCA</option>  
+                 <option value="BBA">BBA</option>  
+                 <option value="B.Tech">B.Tech</option>  
+                 <option value="MBA">MBA</option>  
+                 <option value="MCA">MCA</option>  
+                 <option value="M.Tech">M.Tech</option>  
+            </select>
+
+            <button type="submit">submit</button> <br>
+            
+           
+        </div> 
+    </form>   
+</body>   
+</html>

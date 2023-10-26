@@ -1,0 +1,56 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Login Page </title>
+
+<link rel="stylesheet" type="text/css" href="../singin css file.css" />
+<style> 
+</style> 
+</head>  
+<body>  
+    
+    <form   action="Second singin file php.php" method="post">
+        <div class="container"> 
+            <label  >Course </label>     &nbsp  &nbsp &nbsp &nbsp
+            <select  name="COURSE">  
+                        <option value="Course">Course</option>  
+                        <option value="BCA">BCA</option>  
+                        <option value="BBA">BBA</option>  
+                        <option value="B.Tech">B.Tech</option>  
+                        <option value="MBA">MBA</option>  
+                        <option value="MCA">MCA</option>  
+                        <option value="M.Tech">M.Tech</option>
+            </select><br>
+            <label>College : </label> &nbsp &nbsp
+            <input name="COLLEGE" type="text" placeholder="Enter Your College name" name="username" required><br><br>
+            <label>University  : </label> 
+            <input name="USNIVERSITY" type="text" placeholder="Enter your University name" name="username" required><br><br>
+            <label>Data of birth   </label>
+            <input name="DATABIRTH" type="date" name="date" id="value" onchange="myFunction(value)">
+       
+            
+            <button type="submit">Login</button> <br><br>
+             
+        </div> 
+    </form>
+    <script>
+            var a;
+
+            function myFunction(val){
+                a = val.split("-").reverse().join("-");
+                document.getElementById("value").type = "text";
+                document.getElementById("value").value = a;
+            }
+
+            function f(){
+                document.getElementById("result").innerHTML = a;
+                var z = a.split("-").reverse().join("-");
+                document.getElementById("value").type = "date";
+                document.getElementById("value").value = z;
+            }
+            </script>   
+</body>   
+</html>
+
+ 
